@@ -42,4 +42,6 @@ class PerWorkerGaussianNoise(GaussianNoise):
             action_space,
             scale_schedule=scale_schedule,
             framework=framework,
+            num_workers=num_workers,
+            worker_index=worker_index,            
             **kwargs)
